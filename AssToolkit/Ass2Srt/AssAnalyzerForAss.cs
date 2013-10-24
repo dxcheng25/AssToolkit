@@ -125,8 +125,6 @@ namespace Ass2Srt
                     }
                 }
 
-               
-
                 switch (type)
                 {
                     case 6:

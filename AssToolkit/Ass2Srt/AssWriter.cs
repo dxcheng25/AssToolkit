@@ -78,7 +78,9 @@ namespace Ass2Srt
                 //}
                 //else
                 //{
-                    sw = new StreamWriter(fs, Encoding.Unicode);
+                    //sw = new StreamWriter(fs, Encoding.Unicode);
+                    //NOW USE UTF8 to make it work on UNIX-like systems.
+                sw = new StreamWriter(fs, Encoding.UTF8);
                 //}
 
                 for(int i = 0; i < strAssDescription.Length - 1; i++)

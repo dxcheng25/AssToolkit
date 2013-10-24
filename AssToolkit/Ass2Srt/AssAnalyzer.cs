@@ -60,5 +60,47 @@ namespace Ass2Srt
 
             return strSplittedDialogues;
         }
+
+        protected int CountDigitsInString(string strDialogues)
+        {
+            int numDigits = 0;
+            for (int i = 0; i < strDialogues.Length; ++i)
+            {
+                if (strDialogues[i] >= '0' && strDialogues[i] <= '9')
+                {
+                    ++numDigits;
+                }
+            }
+
+            return numDigits;
+        }
+
+        protected int CountSpacesInString(string strDialogues)
+        {
+            int numDigits = 0;
+            for (int i = 0; i < strDialogues.Length; ++i)
+            {
+                if (strDialogues[i] == ' ')
+                {
+                    ++numDigits;
+                }
+            }
+
+            return numDigits;
+        }
+
+        protected int CountLettersInString(string strDialogues, char l)
+        {
+            int numDigits = 0;
+            for (int i = 0; i < strDialogues.Length; ++i)
+            {
+                if (strDialogues[i] == l)
+                {
+                    ++numDigits;
+                }
+            }
+
+            return numDigits;
+        }
     }
 }

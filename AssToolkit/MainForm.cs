@@ -177,7 +177,7 @@ namespace AssToolkit
         private void ZipPatcher(string folderName, string fileName)
         {
             string szPath = Application.StartupPath + "\\7z\\" + "7za.exe";
-            string arguements = "a \"" + folderName + "\\" + fileName + ".zip\" \"" + folderName + "\\" + fileName + "\"";
+            string arguements = "a -mcu \"" + folderName + "\\" + fileName + ".zip\" \"" + folderName + "\\" + fileName + "\"";
 
             Process szProcess = new Process();
             szProcess.StartInfo.FileName = szPath;

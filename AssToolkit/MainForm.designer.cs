@@ -135,7 +135,7 @@
             this.rbChi.AutoSize = true;
             this.rbChi.Location = new System.Drawing.Point(89, 18);
             this.rbChi.Name = "rbChi";
-            this.rbChi.Size = new System.Drawing.Size(71, 16);
+            this.rbChi.Size = new System.Drawing.Size(74, 21);
             this.rbChi.TabIndex = 1;
             this.rbChi.TabStop = true;
             this.rbChi.Text = "中文单语";
@@ -147,7 +147,7 @@
             this.rbChinEng.AutoSize = true;
             this.rbChinEng.Location = new System.Drawing.Point(9, 18);
             this.rbChinEng.Name = "rbChinEng";
-            this.rbChinEng.Size = new System.Drawing.Size(71, 16);
+            this.rbChinEng.Size = new System.Drawing.Size(74, 21);
             this.rbChinEng.TabIndex = 1;
             this.rbChinEng.TabStop = true;
             this.rbChinEng.Text = "中英双语";
@@ -529,7 +529,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
-            this.Text = "ASSToolkit V1.2";
+            this.Text = "ASSToolkit V1.5";
             this.gbVersions.ResumeLayout(false);
             this.gbVersions.PerformLayout();
             this.gbAssFile.ResumeLayout(false);

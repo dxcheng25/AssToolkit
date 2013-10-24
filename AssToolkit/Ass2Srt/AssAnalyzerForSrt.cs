@@ -126,6 +126,7 @@ namespace Ass2Srt
                     string[] controlCmds = t.Split('\\');
                     foreach (string s in controlCmds)
                     {
+                        //Keep only {\an} and {\pos} tags in srt files
                         if (s.Contains("an") || s.Contains("pos"))
                         {
                             strControlCmd += "{" + "\\" + s + "}";
@@ -154,6 +155,14 @@ namespace Ass2Srt
             foreach (string s in ss)
             {
                 if (s == "")
+                {
+                    continue;
+                }
+
+                //Skip lines of ass bitmaps.
+                if ( CountDigitsInString(s) + CountSpacesInString(s) + CountLettersInString(s, 'l') 
+                   + CountLettersInString(s, 'm') + CountLettersInString(s, 'b')
+                   > 0.8 * s.Length )
                 {
                     continue;
                 }

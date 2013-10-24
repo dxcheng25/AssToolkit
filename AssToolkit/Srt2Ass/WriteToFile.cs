@@ -36,7 +36,9 @@ namespace Srt2Ass
             string fileName;
             fileName = fileDtn.Substring(0, fileDtn.LastIndexOf('.'));
             FS = new FileStream(fileName + ".tmp", FileMode.Append);
-            writeTmpUnicode = new StreamWriter(FS, Encoding.Unicode);
+            //writeTmpUnicode = new StreamWriter(FS, Encoding.Unicode);
+            //Now use UTF8 to make it work on UNIX-like Systems
+            writeTmpUnicode = new StreamWriter(FS, Encoding.UTF8);
         }
 
         public void WriteASS(string[] ScriptInfo, string[]V4Style, string events, Queue<string> qSubs, string encodeType)
