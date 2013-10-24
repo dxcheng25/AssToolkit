@@ -21,6 +21,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.VisualBasic;
 
 namespace Ass2Srt
 {
@@ -28,8 +29,8 @@ namespace Ass2Srt
     {
         protected string ConvertToTrad(string strDialogue)
         {
-            //return (Microsoft.VisualBasic.Strings.StrConv(strDialogue as String, Microsoft.VisualBasic.VbStrConv.TraditionalChinese, 0));
-			return "";
+            return (Microsoft.VisualBasic.Strings.StrConv(strDialogue as String, Microsoft.VisualBasic.VbStrConv.TraditionalChinese, 0));
+			//return "";
 		}
 
         protected string[] SplitString(string originalString, string seperator)

@@ -529,7 +529,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MainForm";
-            this.Text = "ASSToolkit V1.5";
+            this.Text = "ASSToolkit V1.5.1";
             this.gbVersions.ResumeLayout(false);
             this.gbVersions.PerformLayout();
             this.gbAssFile.ResumeLayout(false);
